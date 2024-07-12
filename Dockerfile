@@ -1,4 +1,4 @@
-FROM python3
+FROM python:latest
 RUN pip install Django==3.2
 COPY . . 
 RUN python manage.py migrate
